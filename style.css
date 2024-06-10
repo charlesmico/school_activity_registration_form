@@ -1,0 +1,247 @@
+:root {
+    --black-shade: #4B556B;
+    --white-shade: #FFFFFF;
+    --gray-shade: #94a1b2;
+    --maroon-shade: #800000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    -webkit-scroll-behavior: smooth;
+    font-family: Arial, Verdana;
+}
+
+body {
+    height: auto;
+    color: var(--black-shade);
+    background-color: var(--white-shade);
+    font-family: Arial, Verdana;
+    cursor: pointer;
+}
+
+nav,
+header,
+footer,
+section {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    cursor: none;
+}
+
+ul {
+    list-style: none;
+    cursor: none;
+}
+
+img {
+    width: 100%;
+}
+
+/* Scrollbar */
+body::-webkit-scrollbar {
+    width: 1rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--black-shade);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--maroon-shade);
+}
+
+.container {
+    background: var(--white-shade);
+    max-width: 1000px;
+    margin: 60px auto;
+    /* height: 1250px; */
+    height: auto;
+    padding: 20px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+}
+
+.banner-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+img {
+    width: 80px;
+    height: 80px;
+}
+
+.banner-headers h3,
+.banner-headers p {
+    color: var(--maroon-shade);
+}
+
+.banner-child p {
+    color: var(--black-shade);
+    font-weight: 700;
+}
+
+.main-content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    width: 100%;
+    height: auto;
+}
+
+.info {
+    color: var(--maroon-shade);
+    font-weight: 500;
+}
+
+.data {
+    color: var(--black-shade);
+    font-weight: 600;
+}
+
+.table-info {
+    width: 100%;
+    border: 1px solid var(--maroon-shade);
+    border-collapse: collapse;
+    text-align: left;
+    border-bottom: 0px;
+    margin-top: 20px;
+}
+
+.table-info .title {
+    color: var(--white-shade);
+    font-weight: 700;
+    text-align: center;
+    background: var(--maroon-shade);
+}
+
+.table-info tr th,
+.table-info tr td {
+    padding: 10px;
+}
+
+.table-schedule {
+    width: 100%;
+    border: 1px solid var(--maroon-shade);
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.table-schedule thead {
+    border-bottom: 1px solid var(--maroon-shade);
+}
+
+.table-schedule tr th {
+    color: var(--maroon-shade);
+    border-top: 0px;
+    border-right: 1px solid var(--maroon-shade);
+    border-bottom: 1px solid var(--maroon-shade);
+    padding: 10px 0;
+}
+
+.table-schedule tr td {
+    color: var(--black-shade);
+    border-right: 1px solid var(--maroon-shade);
+    padding: 10px;
+}
+
+.table-schedule tfoot {
+    background: #FFFFCC;
+    border-top: 1px solid var(--maroon-shade);
+}
+
+.table-schedule tfoot td {
+    padding: 0;
+    color: var(--maroon-shade);
+    font-size: .9rem;
+    text-align: center;
+    border-right: 0px;
+    padding: 10px;
+}
+
+.table-billing {
+    width: 100%;
+    border: 1px solid var(--maroon-shade);
+    border-collapse: collapse;
+    text-align: left;
+    border-bottom: 0px;
+}
+
+.table-billing .title {
+    color: var(--white-shade);
+    font-weight: 700;
+    text-align: center;
+    background: var(--maroon-shade);
+}
+
+.table-billing tr th {
+    padding: 10px;
+}
+
+.table-billing .borderT {
+    border-top: 1px solid var(--maroon-shade);
+}
+
+.table-billing .borderL {
+    border-left: 1px solid var(--maroon-shade);
+}
+
+.table-billing .borderB {
+    border-bottom: 1px solid var(--maroon-shade);
+}
+
+.table-billing .borderR {
+    border-right: 1px solid var(--maroon-shade);
+}
+
+.table-billing .textC {
+    text-align: center;
+}
+
+.table-billing .textB {
+    font-weight: 700;
+}
+
+.table-billing .alignR {
+    text-align: right;
+    padding-right: 20px;
+}
+
+.table-billing .alignL {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.table-signatures {
+    margin: 20px 0 0 0;
+    width: 100%;
+    border: 1px solid var(--maroon-shade);
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.table-signatures .dataPT {
+    padding: 50px 0 0 0;
+}
+
+.table-signatures .dataPB {
+    padding: 0 0 10px 0;
+}
+
+.table-signatures .borderB {
+    border-bottom: 1px solid var(--maroon-shade);
+}
